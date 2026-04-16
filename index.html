@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,
+    200,200italic,300,300italic,regular,italic,500,500italic,
+    600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="screen active  " id="start-screen">
+            <h1>Quiz Game!</h1>
+            <div class="welcome-message">
+            <p>Welcome to the Quiz Game</p>
+            <p>Test your knowledge with our fun quiz</p>
+            </div>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="screen active " id="quiz-screen">
+            <div id="question-container">
+                <h2 id="question">Question Text</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <p>Question <span id="question-number">1</span>  of <span id="total-questions">5</span></p>
+                    <!-- Answer buttons will be generated here -->
+                     <p>Score: <span id="score">0</span></p>
+                </div>
+            </div>
+
+            <div class="answers-container" id="answers-container">
+
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+         <div id="result-screen" class="screen  active">
+            <h2>Quiz Results</h2>
+            <div class="result-message">
+            <p>Your final score is: <span id="final-score">0</span> out of <span id="total-questions">5</span></p>
+            <div id="result-message">Good job!</div>
+            </div>
+             <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
