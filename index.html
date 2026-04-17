@@ -20,11 +20,11 @@
             <button id="start-btn">Start Quiz</button>
         </div>
 
-        <div class="screen active " id="quiz-screen">
+        <div class="screen  " id="quiz-screen">
             <div id="question-container">
                 <h2 id="question">Question Text</h2>
                 <div id="answer-buttons" class="btn-grid">
-                    <p>Question <span id="question-number">1</span>  of <span id="total-questions">5</span></p>
+                    <p>Question <span id="current-question">1</span>  of <span id="total-questions">5</span></p>
                     <!-- Answer buttons will be generated here -->
                      <p>Score: <span id="score">0</span></p>
                 </div>
@@ -38,10 +38,10 @@
                 <div id="progress" class="progress"></div>
             </div>
         </div>
-         <div id="result-screen" class="screen  active">
+         <div id="result-screen" class="screen">
             <h2>Quiz Results</h2>
-            <div class="result-message">
-            <p>Your final score is: <span id="final-score">0</span> out of <span id="total-questions">5</span></p>
+            <div class="result-message-container">
+            <p>Your final score is: <span id="final-score">0</span> out of <span id="max-score">5</span></p>
             <div id="result-message">Good job!</div>
             </div>
              <button id="restart-btn">Restart Quiz</button>

@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 * {
-    margin: 0;
+    margin: 0.5rem;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -162,5 +162,21 @@ button{
 }
 button:hover {
     background-color: #c0c0c0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    #start-screen h1, #quiz-screen h2, #result-screen h2 {
+        font-size: 3rem;
+    }
+    .welcome-message, .result-message p {
+        font-size: 1.5rem;
+    }
+    .answer-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
 }
 
